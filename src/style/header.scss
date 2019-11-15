@@ -227,24 +227,6 @@ header {
       }
     }
   }
-  .label-group {
-    width: 200px;
-    margin: 0 5px;
-    i {
-      width: 30px;
-      height: 30px;
-    }
-    .el-input__inner {
-      height: 30px;
-    }
-    .dropdown {
-      box-sizing: border-box;
-      width: 100%;
-      height: 30px;
-      border: 1px solid #eee;
-      border-radius: 2px;
-    }
-  }
   .mold-group {
     width: 80px;
     @include flexcenter;
@@ -270,31 +252,6 @@ header {
           right: -20px;
           bottom: -5px;
         }
-      }
-    }
-  }
-  .theme-group {
-    font-size: 12px;
-    width: 100px;
-    a {
-      display: inline-block;
-      text-align: center;
-      text-decoration: none;
-      @include block;
-    }
-    .dropdown-toggle {
-      width: 80px;
-      height: 50px;
-      margin: 6px auto;
-      span {
-        font-size: 12px;
-        display: inline-block;
-        @include block;
-      }
-      &>a {
-        display: block;
-        height: 20px;
-        margin-top: 15px;
       }
     }
   }
@@ -353,7 +310,7 @@ header {
       font-size: 12px;
     }
     input {
-      height: 25px;
+      height: 30px !important;
     }
     .font-family-select {
       input {
@@ -417,5 +374,5 @@ header {
     i {
       font-size: 12px;
     }
-  } ////////////////////////////////////
+  }
 }

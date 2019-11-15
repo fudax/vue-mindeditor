@@ -11,101 +11,121 @@
   <span class="font-bold menu-btn tab-icons" @click="execCommandFontStyle('bold')" :class="{'selected':boldSelected}" :disabled="disabledBold"></span>
   <span class="font-italic menu-btn tab-icons" @click="execCommandFontStyle('italic')" :class="{'selected':italicSelected}" :disabled="disabledItalic"></span>
 </div>
-
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapGetters } from "vuex";
 export default {
   data() {
     return {
-      'fontFamilys': [{
-        id: 1,
-        value: '宋体,SimSun',
-        name: '宋体'
-      }, {
-        id: 2,
-        value: '微软雅黑,Microsoft YaHei',
-        name: '微软雅黑'
-      }, {
-        id: 3,
-        value: '楷体,楷体_GB2312,SimKai',
-        name: '楷体'
-      }, {
-        id: 4,
-        value: '黑体, SimHei',
-        name: '黑体'
-      }, {
-        id: 5,
-        value: '隶书, SimLi',
-        name: '隶书'
-      }, {
-        id: 6,
-        value: 'andale mono',
-        name: 'Andale Mono'
-      }, {
-        id: 7,
-        value: 'arial,helvetica,sans-serif',
-        name: 'Arial'
-      }, {
-        id: 8,
-        value: 'arial black,avant garde',
-        name: 'arialBlack'
-      }, {
-        id: 9,
-        value: 'comic sans ms',
-        name: 'comic Sans Ms'
-      }, {
-        id: 10,
-        value: 'impact,chicago',
-        name: 'Impact'
-      }, {
-        id: 11,
-        value: 'times new roman',
-        name: 'times New Roman'
-      }, {
-        id: 12,
-        value: 'sans-serif',
-        name: 'Sans-Serif',
-      }],
+      fontFamilys: [
+        {
+          id: 1,
+          value: "宋体,SimSun",
+          name: "宋体"
+        },
+        {
+          id: 2,
+          value: "微软雅黑,Microsoft YaHei",
+          name: "微软雅黑"
+        },
+        {
+          id: 3,
+          value: "楷体,楷体_GB2312,SimKai",
+          name: "楷体"
+        },
+        {
+          id: 4,
+          value: "黑体, SimHei",
+          name: "黑体"
+        },
+        {
+          id: 5,
+          value: "隶书, SimLi",
+          name: "隶书"
+        },
+        {
+          id: 6,
+          value: "andale mono",
+          name: "Andale Mono"
+        },
+        {
+          id: 7,
+          value: "arial,helvetica,sans-serif",
+          name: "Arial"
+        },
+        {
+          id: 8,
+          value: "arial black,avant garde",
+          name: "arialBlack"
+        },
+        {
+          id: 9,
+          value: "comic sans ms",
+          name: "comic Sans Ms"
+        },
+        {
+          id: 10,
+          value: "impact,chicago",
+          name: "Impact"
+        },
+        {
+          id: 11,
+          value: "times new roman",
+          name: "times New Roman"
+        },
+        {
+          id: 12,
+          value: "sans-serif",
+          name: "Sans-Serif"
+        }
+      ],
 
-      'fontSizes': [{
-        id: 1,
-        value: 10,
-        label: 10,
-      }, {
-        id: 2,
-        value: 12,
-        label: 12,
-      }, {
-        id: 3,
-        value: 16,
-        label: 16,
-      }, {
-        id: 4,
-        value: 18,
-        label: 18,
-      }, {
-        id: 5,
-        value: 24,
-        label: 24,
-      }, {
-        id: 6,
-        value: 32,
-        label: 32,
-      }, {
-        id: 7,
-        value: 48,
-        label: 48,
-      }],
-      fontFamilyDefaultValue: '字体',
-      fontSizeDefaultValue: '字号'
-    }
+      fontSizes: [
+        {
+          id: 1,
+          value: 10,
+          label: 10
+        },
+        {
+          id: 2,
+          value: 12,
+          label: 12
+        },
+        {
+          id: 3,
+          value: 16,
+          label: 16
+        },
+        {
+          id: 4,
+          value: 18,
+          label: 18
+        },
+        {
+          id: 5,
+          value: 24,
+          label: 24
+        },
+        {
+          id: 6,
+          value: 32,
+          label: 32
+        },
+        {
+          id: 7,
+          value: 48,
+          label: 48
+        }
+      ],
+      fontFamilyDefaultValue: "字体",
+      fontSizeDefaultValue: "字号"
+    };
   },
 
   computed: {
     ...mapGetters({
-      minder: 'getMinder'
+      minder: "getMinder"
     }),
     currentTheme() {
       return this.minder.getThemeItems();
@@ -113,54 +133,75 @@ export default {
 
     // 直接定义model的计算型属性会时select异常，
     disabledFont() {
-      var currentFontFamily = this.minder.queryCommandValue && this.minder.queryCommandValue('fontfamily');
-      this.fontFamilyDefaultValue = currentFontFamily || '字体'
-      return this.minder.queryCommandState && this.minder.queryCommandState('fontfamily') === -1
+      var currentFontFamily =
+        this.minder.queryCommandValue &&
+        this.minder.queryCommandValue("fontfamily");
+      this.fontFamilyDefaultValue = currentFontFamily || "字体";
+      return (
+        this.minder.queryCommandState &&
+        this.minder.queryCommandState("fontfamily") === -1
+      );
     },
     disabledFontSize() {
-      this.fontSizeDefaultValue = this.minder.queryCommandValue && this.minder.queryCommandValue('fontsize') || '字号'
-      return this.minder.queryCommandState && this.minder.queryCommandState('fontsize') === -1
+      this.fontSizeDefaultValue =
+        (this.minder.queryCommandValue &&
+          this.minder.queryCommandValue("fontsize")) ||
+        "字号";
+      return (
+        this.minder.queryCommandState &&
+        this.minder.queryCommandState("fontsize") === -1
+      );
     },
     disabledBold() {
-      return this.minder.queryCommandState && this.minder.queryCommandState('bold') === -1
+      return (
+        this.minder.queryCommandState &&
+        this.minder.queryCommandState("bold") === -1
+      );
     },
     disabledItalic() {
-      return this.minder.queryCommandState && this.minder.queryCommandState('italic') === -1
+      return (
+        this.minder.queryCommandState &&
+        this.minder.queryCommandState("italic") === -1
+      );
     },
-    boldSelected(){
-      return this.minder.queryCommandState && this.minder.queryCommandState('bold') == 1
+    boldSelected() {
+      return (
+        this.minder.queryCommandState &&
+        this.minder.queryCommandState("bold") == 1
+      );
     },
-    italicSelected(){
-      return this.minder.queryCommandState && this.minder.queryCommandState('italic') == 1
+    italicSelected() {
+      return (
+        this.minder.queryCommandState &&
+        this.minder.queryCommandState("italic") == 1
+      );
     }
   },
   methods: {
     execCommandFontFamily(value) {
-      if (value == '字体') {
+      if (value == "字体") {
         return;
       }
-      // console.log('set:' + value);
-      this.minder.execCommand('fontfamily', value)
+      this.minder.execCommand("fontfamily", value);
     },
     execCommandFontSize(value) {
-      // console.log(value);
-      if (typeof value !== 'number') {
+      if (typeof value !== "number") {
         return;
       }
-      this.minder.execCommand('fontsize', value)
+      this.minder.execCommand("fontsize", value);
     },
     execCommandFontStyle(style) {
       var minder = this.minder;
       switch (style) {
-        case 'bold':
-          minder.queryCommandState('bold') === -1 || minder.execCommand('bold')
+        case "bold":
+          minder.queryCommandState("bold") === -1 || minder.execCommand("bold");
           break;
-        case 'italic':
-          minder.queryCommandState('italic') === -1 || minder.execCommand('italic')
+        case "italic":
+          minder.queryCommandState("italic") === -1 ||
+            minder.execCommand("italic");
           break;
       }
     }
   }
-}
-
+};
 </script>
