@@ -30,12 +30,12 @@
       <el-button class="tab-icons insert" @click="showOverlay"> </el-button>
       <el-dropdown trigger="click">
         <span class="el-dropdown-link">
-          附件
+          批注
         <i class="el-icon-caret-bottom el-icon--right"></i>
         </span>
         <el-dropdown-menu slot="dropdown" class="remark-dropdown-list">
-          <el-dropdown-item>插入附件</el-dropdown-item>
-          <el-dropdown-item>移除已有附件</el-dropdown-item>
+          <el-dropdown-item>插入批注</el-dropdown-item>
+          <el-dropdown-item>移除已有批注</el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
     </div>
@@ -100,7 +100,7 @@
       showOverlay() {
         this.$msgbox({
           title: '输入',
-          message: '这是一段内容, 这是一段内容, 这是一段内容, 这是一段内容, 这是一段内容, 这是一段内容, 这是一段内容',
+          message: '暂时未实现，敬请期待！',
           showCancelButton: true,
           confirmButtonText: '确定',
           cancelButtonText: '取消',

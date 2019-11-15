@@ -1,5 +1,7 @@
 <template lang="html">
 <div class="menu-container">
+   <expand></expand>
+   <selection></selection>
   <undo-redo></undo-redo>
   <insert-box></insert-box>
   <move-box></move-box>
@@ -7,7 +9,6 @@
   <attachment></attachment>
   <sequence-box></sequence-box>
   <progress-box></progress-box>
-  <label-box></label-box>
 </div>
 </template>
 
@@ -19,7 +20,8 @@ import editDel from './edit_del'
 import attachment from './attachment'
 import sequenceBox from './sequence_box'
 import progressBox from './progress_box'
-import labelBox from './label_box'
+import expand from './expand'
+import selection from './selection'
 
 export default {
   name: 'edit_menu',
@@ -31,7 +33,8 @@ export default {
     attachment,
     sequenceBox,
     progressBox,
-    labelBox
+    expand,
+    selection
   }
 }
 

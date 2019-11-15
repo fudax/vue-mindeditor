@@ -12,7 +12,7 @@ header {
     li {
       line-height: 30px;
       display: inline-flex;
-      width: 50px;
+      width: 80px;
       height: 100%;
       list-style: none;
       a {
@@ -359,9 +359,17 @@ header {
       input {
         width: 150px;
       }
+      .el-input__suffix {
+        top: 12px;
+      }
     }
-    .font-size-select input {
-      width: 80px;
+    .font-size-select {
+      input {
+        width: 80px;
+      }
+      .el-input__suffix {
+        top: 12px;
+      }
     }
     .font-bold,
     .font-italic {

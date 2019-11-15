@@ -37,7 +37,7 @@ export default {
   data() {
     return {
       zoom: 100,
-      isNavOpen: true,
+      isNavOpen: false,
       $previewNavigator: "",
       paper: "",
       nodeThumb: "",
