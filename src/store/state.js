@@ -1,7 +1,7 @@
 export const state = {
   count: 2,
-  minder:{},
-  editor:{},
+  minder: {},
+  editor: {},
   working: {
     editing: false,
     saving: false,

@@ -7,8 +7,6 @@
  * @copyright: Baidu FEX, 2014
  */
 import jsonDiff from  '../tool/jsondiff'
-// define(function (require, exports, module) {
-  // var jsonDiff = require('../tool/jsondiff');
   function HistoryRuntime() {
     var minder = this.minder;
     var hotbox = this.hotbox;

@@ -1,17 +1,28 @@
 export const actions = {
-  changeCount: ({commit}) => commit('changeCount'),
+  changeCount: ({
+    commit
+  }) => commit('changeCount'),
 
-  increment: ({commit}) => commit('increment'),
+  increment: ({
+    commit
+  }) => commit('increment'),
 
-  decrement: ({commit}) => commit('decrement'),
+  decrement: ({
+    commit
+  }) => commit('decrement'),
 
-  incrementIfOdd({commit, state}) {
+  incrementIfOdd({
+    commit,
+    state
+  }) {
     if ((state.count + 1) % 2 === 0) {
       commit('increment')
     }
   },
 
-  incrementAsync({commit}) {
+  incrementAsync({
+    commit
+  }) {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
         commit('increment')
@@ -20,18 +31,23 @@ export const actions = {
     })
   },
 
-  setConfig: ({commit}) => commit('setConfig'),
+  setConfig: ({
+    commit
+  }) => commit('setConfig'),
 
-  registerEvent: ({commit}) => commit('registerEvent', callback),
+  registerEvent: ({
+    commit
+  }) => commit('registerEvent', callback),
 
-  executeCallback({commit, state}) {
-    // console.log(state.callbackQueue);
+  executeCallback({
+    commit,
+    state
+  }) {
     state.callbackQueue.forEach(function (ele) {
       ele.apply(this, arguments);
     })
   },
 
-  //localStorage
   isQuotaExceeded(e) {
     var quotaExceeded = false;
     if (e) {
@@ -52,19 +68,25 @@ export const actions = {
         quotaExceeded = true;
       }
     }
-    return quotaExceeded;index
+    return quotaExceeded;
+    index
   },
 
-  getMemory({commit,state},key) {
+  getMemory({
+    commit,
+    state
+  }, key) {
     var value = window.localStorage.getItem(key);
     var result = null || JSON.parse(value)
-    console.log('action:'+result);
+    console.log('action:' + result);
     return result;
   },
 
-  setMemory({commit,state}, data) {
+  setMemory({
+    commit,
+    state
+  }, data) {
     try {
-      // console.log(data);
       window.localStorage.setItem(data.key, JSON.stringify(data.value));
       return true;
     } catch (e) {
@@ -82,13 +104,5 @@ export const actions = {
 
   clearMemory() {
     window.localStorage.clear();
-  },
-
-  // commandBinder(minder, command, scope) {
-  //   minder.on && minder.on('interactchange', function () {
-  //     console.log(1);
-  //     scope.commandDisabled = minder.queryCommandState(command) === -1;
-  //     scope.commandValue = minder.queryCommandValue(command);
-  //   });
-  // }
+  }
 }

@@ -1,20 +1,3 @@
-/**
- * @fileOverview
- *
- *
- *
- * @author: techird
- * @copyright: Baidu FEX, 2014
- */
-
-// define(function (require, exports, module) {
-/*!
-    * https://github.com/Starcounter-Jack/Fast-JSON-Patch
-    * json-patch-duplex.js 0.5.0
-    * (c) 2013 Joachim Wester
-    * MIT license
-    */
-
 var _objectKeys = (function () {
   if (Object.keys)
     return Object.keys;
@@ -42,7 +25,6 @@ function deepClone(obj) {
   }
 }
 
-// Dirty check if obj is different from mirror, generate patches and update mirror
 function _generate(mirror, obj, patches, path) {
   var newKeys = _objectKeys(obj);
   var oldKeys = _objectKeys(mirror);
@@ -96,7 +78,3 @@ export default function compare(tree1, tree2) {
   _generate(tree1, tree2, patches, '');
   return patches;
 }
-
-// return module.exports = compare;
-// });
-//

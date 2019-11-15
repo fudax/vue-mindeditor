@@ -1,6 +1,4 @@
-// getters are functions
 export const count = state => {
-  // console.log(state.state.count);
   return state.count;
 }
 
@@ -22,10 +20,10 @@ export const config = state => {
   }
 }
 
-export const getMinder = state=>{
+export const getMinder = state => {
   return state.minder
 }
 
-export const getEditor = state=>{
+export const getEditor = state => {
   return state.editor
 }
