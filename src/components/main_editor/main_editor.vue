@@ -10,12 +10,12 @@ export default {
     var el = this.$el;
     var editor = window.editor = new Editor(el);
     this.setEditor(editor);
-    if (window.localStorage.__dev_minder_content) {
-      editor.minder.importJson(JSON.parse(window.localStorage.__dev_minder_content));
+    if (window.localStorage.mindText) {
+      editor.minder.importJson(JSON.parse(window.localStorage.mindText));
     }
 
     editor.minder.on('contentchange', function () {
-      window.localStorage.__dev_minder_content = JSON.stringify(editor.minder.exportJson());
+      window.localStorage.mindText = JSON.stringify(editor.minder.exportJson());
     });
 
     window.minder = window.km = editor.minder;

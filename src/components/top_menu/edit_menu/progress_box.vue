@@ -61,13 +61,11 @@ export default {
 						case 1: return '未开始';
 						case 9: return '全部完成';
 						default: return '完成' + (index - 1) + '/8';
-
       }
     }
   },
   created(){
   }
-
 }
 
 </script>

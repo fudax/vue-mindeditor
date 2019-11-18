@@ -4,7 +4,6 @@
     <li v-for="(item, index) in items" class="menu-btn" :class="classArray(index)" @click="execCommand(index)" :title="title(index)" ></li>
   </ul>
 </div>
-
 </template>
 
 <script>

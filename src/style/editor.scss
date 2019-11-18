@@ -114,3 +114,14 @@ div.minder-editor-container {
   background-color: rgb(251, 251, 251);
   cursor: ew-resize;
 }
+
+.hotbox .state .button.enabled.selected .key,
+.hotbox .state .ring .key {
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.hotbox .state .bottom .button .label,
+.hotbox .state .top .button .label {
+  font-weight: 600;
+}
