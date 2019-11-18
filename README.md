@@ -1,6 +1,13 @@
 # vue-mindeditor based on fex-team/kityminder-editor
 
-> A Vue2 project
+> 在百度脑图的基础上修改：
+> - 改为Vue2组件实现，基于Webpack4打包
+> - 删除图片、链接、备注的支持
+> - 合并样式菜单到编辑菜单，菜单从原先的三个变为两个
+> - 删除编辑菜单上的撤销、重做按钮，改为快捷键和鼠标右键支持
+> - 删除多主题支持和打标签功能
+> - 移除搜索功能
+> - 文件存储置于本地localStorage（参见main_editor.vue），需要导出或者另存可以自行修改
 
 ## Build Setup
 
