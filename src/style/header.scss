@@ -40,7 +40,7 @@ header {
   height: 61px;
   border-bottom: 1px solid #999;
   .tab-icons {
-    background-image: url('../assets/icons.png');
+    background-image: url('/static/minder/icons.png');
     background-repeat: no-repeat;
   }
 }
@@ -93,7 +93,7 @@ header {
     }
   }
   .insert-group {
-    width: 230px;
+    width: 165px;
     &>div {
       height: 50%;
       margin: 0 5px;
@@ -209,7 +209,7 @@ header {
   }
   .sequence-group {
     li {
-      background-image: url('../assets/iconpriority.png');
+      background-image: url('/static/minder/iconpriority.png');
     }
     @for $i from 0 through 9 {
       .sequence-#{$i} {
@@ -219,7 +219,7 @@ header {
   }
   .progress-group {
     li {
-      background-image: url('../assets/iconprogress.png');
+      background-image: url('/static/minder/iconprogress.png');
     }
     @for $i from 0 through 9 {
       .progress-#{$i} {
@@ -231,7 +231,7 @@ header {
     width: 80px;
     @include flexcenter;
     .mold-icons {
-      background-image: url('../assets/mold.png');
+      background-image: url('/static/minder/mold.png');
       background-repeat: no-repeat;
     }
     @for $i from 1 through 6 {
@@ -327,6 +327,7 @@ header {
       .el-input__suffix {
         top: 12px;
       }
+      margin-left: 5px;
     }
     .font-bold,
     .font-italic {
@@ -336,10 +337,10 @@ header {
       margin: 0 3px;
     }
     .font-bold {
-      background-position: 0 -240px;
+      background-position: 0 -245px;
     }
     .font-italic {
-      background-position: 0 -260px;
+      background-position: 0 -265px;
     }
   }
   .expand-group,

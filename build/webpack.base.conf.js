@@ -42,18 +42,6 @@ module.exports = {
           resolve('test'),
           resolve('node_modules/element-ui/packages'),
           resolve('node_modules/element-ui/src'),
-          resolve('node_modules/v-contextmenu'),
-          resolve('node_modules/vue-simplemde'),
-          resolve('node_modules/gantt-elastic'),
-          resolve('node_modules/gantt-elastic-header'),
-          resolve('node_modules/vue-switches'), //gantt-elastic依赖组件，MMP老子查了两天，被迫打开sourceMap才发现
-          // resolve('node_modules/vuedraggable'),
-          // resolve('node_modules/vue-fullcalendar'),
-          // resolve('node_modules/html2canvas'),
-          // resolve('node_modules/vue-cookies'),
-          // resolve('node_modules/inline-attachment'),
-          // resolve('node_modules/echarts'),
-          // resolve('node_modules/axios'),
           resolve('node_modules/webpack-dev-server/client')
         ]
       },
