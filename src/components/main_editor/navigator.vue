@@ -148,33 +148,6 @@ export default {
       this.minder.off("viewchange", this.updateVisibleView);
     },
 
-    getPathHandler(theme) {
-      switch (theme) {
-        case "tianpan":
-        case "tianpan-compact":
-          return function(nodePathData, x, y, width, height) {
-            var r = width >> 1;
-            nodePathData.push("M", x, y + r, "a", r, r, 0, 1, 1, 0, 0.01, "z");
-          };
-        default: {
-          return function(nodePathData, x, y, width, height) {
-            nodePathData.push(
-              "M",
-              x,
-              y,
-              "h",
-              width,
-              "v",
-              height,
-              "h",
-              -width,
-              "z"
-            );
-          };
-        }
-      }
-    },
-
     updateContentView() {
       var self = this;
       var view = self.minder.getRenderContainer().getBoundaryBox();
@@ -250,13 +223,6 @@ export default {
     self.contentView = new kity.Box();
     self.visibleView = new kity.Box();
 
-    /**
-     * 增加一个对天盘图情况缩略图的处理,
-     * @Editor: Naixor line 104~129
-     * @Date: 2015.11.3
-     */
-    self.pathHandler = self.getPathHandler(minder.getTheme());
-
     minder.setDefaultOptions({
       zoom: self.config.zoom
     });
@@ -272,11 +238,6 @@ export default {
     } else {
       self.unbind();
     }
-
-    // 主题切换事件
-    minder.on("themechange", function(e) {
-      pathHandler = self.getPathHandler(e.theme);
-    });
 
     navigate();
 
