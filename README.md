@@ -1,6 +1,6 @@
-# vue-mindeditor based on fex-team/kityminder-editor
+# vue-mindeditor based on fex-team/kityminder-core
 
-> 在[百度脑图](https://github.com/fex-team/kityminder-editor)的基础上修改：
+> 在[百度脑图](https://github.com/fex-team/kityminder-core)的基础上修改：
 > - 改为Vue2组件实现，基于Webpack4打包
 > - 删除图片、链接、备注的支持
 > - 合并样式菜单到编辑菜单，菜单从原先的三个变为两个
