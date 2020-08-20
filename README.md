@@ -1,5 +1,3 @@
-# 最近比较忙，抽空我再更新一下代码和说明，我这份代码80%+都是复制过来的，建议大家自己研究，不能自己做开发、测试开发然后学习能力比我这个奔四的测试工程师还水吧，加油！
-
 # vue-mindeditor based on fex-team/kityminder-core
 
 > 在[百度脑图](https://github.com/fex-team/kityminder-core)的基础上修改：
@@ -25,3 +23,5 @@
 
 # License
     BSD 3-Clause
+
+### 最近比较忙，抽空我再更新一下代码和说明，建议大家自己先研究，加油！
