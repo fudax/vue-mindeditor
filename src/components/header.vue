@@ -20,8 +20,8 @@
 </template>
 
 <script>
-  import editMenu from './top_menu/edit_menu/edit_menu'
-  import viewMenu from './top_menu/view_menu/view_menu'
+  import editMenu from './menu/edit/editMenu'
+  import viewMenu from './menu/view/viewMenu'
   export default {
     name: 'headerVue',
     data() {

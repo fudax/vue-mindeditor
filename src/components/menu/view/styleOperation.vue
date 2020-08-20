@@ -21,7 +21,7 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-  'name': 'style_opreation',
+  'name': 'styleOpreation',
   computed: {
     ...mapGetters({
       minder: 'getMinder'

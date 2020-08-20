@@ -12,7 +12,7 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 export default {
-  name: 'progress_box',
+  name: 'progressBox',
   data() {
     return {
       items: [

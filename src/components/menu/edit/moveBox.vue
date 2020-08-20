@@ -15,7 +15,7 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-  name: 'move_box',
+  name: 'moveBox',
   computed: {
     ...mapGetters({
       'minder': 'getMinder'

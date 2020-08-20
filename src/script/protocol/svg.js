@@ -24,9 +24,9 @@ function exportSVG(minder) {
     style: 'font-family: Arial, "Microsoft Yahei",  "Heiti SC"; background: ' + minder.getStyle('background')
   });
   $svg[0].setAttribute('viewBox', [renderBox.x - padding | 0,
-    renderBox.y - padding | 0,
-    width + padding * 2 | 0,
-    height + padding * 2 | 0
+  renderBox.y - padding | 0,
+  width + padding * 2 | 0,
+  height + padding * 2 | 0
   ].join(' '));
 
   svgXml = $('<div></div>').append($svg).html();
@@ -36,7 +36,7 @@ function exportSVG(minder) {
   var blob = new Blob([svgXml], {
     type: 'image/svg+xml'
   });
-  
+
   var DOMURL = window.URL || window.webkitURL || window;
   var svgUrl = DOMURL.createObjectURL(blob);
 
@@ -45,17 +45,17 @@ function exportSVG(minder) {
 }
 
 function downloadSVG(fileURI, fileName) {
-    try {
-      const link = document.createElement('a');
-      link.href = fileURI;
-      link.download = `${fileName}.svg`;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-    } catch (err) {
-      alert(err);
-    }
+  try {
+    const link = document.createElement('a');
+    link.href = fileURI;
+    link.download = `${fileName}.svg`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  } catch (err) {
+    alert(err);
   }
+}
 
 export {
   exportSVG

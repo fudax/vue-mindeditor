@@ -9,7 +9,7 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 export default {
-  name: 'sequence_box',
+  name: 'sequenceBox',
   data() {
     return {
       items: [

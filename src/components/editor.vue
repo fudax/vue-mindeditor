@@ -9,8 +9,8 @@
 
 <script>
 import headerMenu from '@/components/header'
-import mainEditor from '@/components/main_editor/main_editor'
-import navigator from '@/components/main_editor/navigator'
+import mainEditor from '@/components/main/mainEditor'
+import navigator from '@/components/main/navigator'
 
 export default {
   name: 'editor',

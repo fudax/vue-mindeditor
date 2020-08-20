@@ -11,16 +11,16 @@
 </template>
 
 <script>
-import insertBox from './insert_box'
-import moveBox from './move_box'
-import editDel from './edit_del'
-import sequenceBox from './sequence_box'
-import progressBox from './progress_box'
+import insertBox from './insertBox'
+import moveBox from './moveBox'
+import editDel from './editDel'
+import sequenceBox from './sequenceBox'
+import progressBox from './progressBox'
 import expand from './expand'
 import selection from './selection'
 
 export default {
-  name: 'edit_menu',
+  name: 'editMenu',
   components: {
     insertBox,
     moveBox,

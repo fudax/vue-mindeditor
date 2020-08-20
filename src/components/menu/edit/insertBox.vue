@@ -19,7 +19,7 @@
 <script>
 import { mapGetters } from 'vuex'
 export default {
-  name: 'insert_box',
+  name: 'insertBox',
   data() {
     return {
 
