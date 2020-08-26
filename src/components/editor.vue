@@ -1,7 +1,7 @@
 <template>
 <div class="main-container">
   <header-menu></header-menu>
-  <mainEditor></mainEditor>
+  <main-editor></main-editor>
   <navigator></navigator>
 </div>
 
