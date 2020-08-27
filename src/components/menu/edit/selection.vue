@@ -6,8 +6,8 @@
     <el-col :span="24">
       <el-dropdown trigger="click" :hide-on-click="true" class="dropdown-toggle menu-btn" @command="handleCommand">
         <span class="el-dropdown-link ">
-            全选
-            <i class="el-icon-caret-bottom el-icon--right"></i>
+          全选
+          <i class="el-icon-caret-bottom el-icon--right"></i>
         </span>
         <el-dropdown-menu slot="dropdown" class="selection-dropdown-list">
           <el-dropdown-item class="selection-1 dropdown-item" command="1">反选</el-dropdown-item>
@@ -20,7 +20,6 @@
     </el-col>
   </el-row>
 </div>
-
 </template>
 
 <script>
@@ -99,7 +98,7 @@ export default {
       minder.select(selection, true);
       minder.fire('receiverfocus');
     },
-    
+
     handleCommand(command) {
       switch (~~command) {
         case 1:
@@ -121,5 +120,4 @@ export default {
     }
   }
 }
-
 </script>

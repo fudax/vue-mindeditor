@@ -1,4 +1,4 @@
-<template >
+<template>
 <div class="move-group ">
   <div class="move-up menu-btn" :disabled="disabled1" @click="ArrangeUp">
     <i class="tab-icons"></i>
@@ -9,11 +9,12 @@
     <span>下移</span>
   </div>
 </div>
-
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import {
+  mapGetters
+} from 'vuex'
 export default {
   name: 'moveBox',
   computed: {
@@ -40,5 +41,4 @@ export default {
     }
   }
 }
-
 </script>

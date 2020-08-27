@@ -9,11 +9,12 @@
     <span>删除</span>
   </div>
 </div>
-
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import {
+  mapGetters
+} from 'vuex';
 export default {
   name: 'edit_del',
   computed: {
@@ -47,5 +48,4 @@ export default {
     }
   }
 }
-
 </script>

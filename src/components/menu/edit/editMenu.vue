@@ -1,7 +1,7 @@
 <template lang="html">
 <div class="menu-container">
-   <expand></expand>
-   <selection></selection>
+  <expand></expand>
+  <selection></selection>
   <insert-box></insert-box>
   <move-box></move-box>
   <edit-del></edit-del>
@@ -31,5 +31,4 @@ export default {
     selection
   }
 }
-
 </script>

@@ -13,11 +13,12 @@
     <span>插入同级主题</span>
   </div>
 </div>
-
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import {
+  mapGetters
+} from 'vuex'
 export default {
   name: 'insertBox',
   data() {
@@ -69,5 +70,4 @@ export default {
     }
   }
 }
-
 </script>

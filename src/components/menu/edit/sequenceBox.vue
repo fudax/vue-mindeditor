@@ -1,13 +1,16 @@
 <template lang="">
 <div class="sequence-group">
   <ul :disabled="commandDisabled">
-    <li v-for="(item, index) in items" class="menu-btn" :class="classArray(index)" @click="execCommand(index)" :title="title(index)" ></li>
+    <li v-for="(item, index) in items" class="menu-btn" :class="classArray(index)" @click="execCommand(index)" :title="title(index)"></li>
   </ul>
 </div>
 </template>
 
 <script>
-import { mapGetters, mapActions } from 'vuex'
+import {
+  mapGetters,
+  mapActions
+} from 'vuex'
 export default {
   name: 'sequenceBox',
   data() {
@@ -47,9 +50,9 @@ export default {
       var sequence = 'sequence-' + index;
 
       // 用数组返回多个class
-      var arr = [
-        {'active': isActive}, sequence
-      ]
+      var arr = [{
+        'active': isActive
+      }, sequence]
       return arr
     },
     title(index) {
@@ -63,5 +66,4 @@ export default {
   },
 
 }
-
 </script>
