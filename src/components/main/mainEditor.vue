@@ -1,9 +1,13 @@
 <template lang="html">
-  <div class="mind-editor"></div>
+<div class="mind-editor"></div>
 </template>
 
 <script>
-import { mapActions, mapMutations, mapGetters } from 'vuex'
+import {
+  mapActions,
+  mapMutations,
+  mapGetters
+} from 'vuex'
 export default {
   mounted() {
     var Editor = require('../../script/editor');
@@ -37,7 +41,8 @@ export default {
     ])
   },
 }
-
 </script>
 
-<style lang="scss">@import "../../style/editor.scss";</style>
+<style lang="scss">
+@import "../../style/editor.scss";
+</style>
