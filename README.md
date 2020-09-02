@@ -1,4 +1,4 @@
-# vue-mindeditor based on fex-team/kityminder-core
+# Vue-MindEditor based on fex-team/kityminder-core
 
 > 在[百度脑图](https://github.com/fex-team/kityminder-core)的基础上修改：
 > - 改为Vue2组件实现，基于Webpack4打包
