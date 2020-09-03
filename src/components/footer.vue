@@ -6,6 +6,3 @@ export default {
   name: 'footerVue'
 }
 </script>
-
-<style lang="css">
-</style>
