@@ -217,8 +217,7 @@ export default {
     var self = this;
     var minder = self.minder;
 
-    /**  以下部分是缩略图导航器 *
-     * */
+    // 以下部分是缩略图导航器
     self.$previewNavigator = $(".nav-previewer");
 
     // 画布，渲染缩略图
@@ -234,12 +233,6 @@ export default {
     );
     self.contentView = new kity.Box();
     self.visibleView = new kity.Box();
-
-    /**
-     * 增加一个对天盘图情况缩略图的处理,
-     * @Editor: Naixor line 104~129
-     * @Date: 2015.11.3
-     */
 
     self.pathHandler = self.getPathHandler(minder.getTheme());
     minder.setDefaultOptions({
