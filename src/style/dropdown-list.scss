@@ -3,7 +3,7 @@
 .remark-dropdown-list,
 .selection-dropdown-list,
 .expand-dropdown-list {
-  font-size: 12px
+  font-size: 12px;
 }
 
 .mold-dropdown-list {
@@ -11,7 +11,7 @@
   height: 170px;
   font-size: 12px;
   .mold-icons {
-    background-image: url('/static/minder/mold.png');
+    background-image: url("/static/minder/mold.png");
     background-repeat: no-repeat;
   }
   .dropdown-item {
@@ -23,7 +23,7 @@
   }
   @for $i from 1 through 6 {
     .mold-#{$i} {
-      background-position: (1-$i)*50px 0;
+      background-position: (1-$i) * 50px 0;
     }
   }
 }
@@ -43,7 +43,7 @@
   }
 }
 
-  .expand-dropdown-list {
+.expand-dropdown-list {
   .dropdown-item {
     line-height: 25px;
   }

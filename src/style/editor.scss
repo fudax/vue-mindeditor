@@ -20,7 +20,7 @@
   z-index: 2;
 }
 
-.km-editor>.mask {
+.km-editor > .mask {
   display: block;
   position: absolute;
   left: 0;
@@ -30,7 +30,7 @@
   background-color: transparent;
 }
 
-.km-editor>.receiver {
+.km-editor > .receiver {
   position: absolute;
   background: white;
   outline: none;
@@ -103,7 +103,7 @@ div.minder-editor-container {
   right: 0;
   width: 250px;
   bottom: 0;
-  border-left: 1px solid #CCC;
+  border-left: 1px solid #ccc;
 }
 
 .minder-divider {
@@ -127,11 +127,11 @@ div.minder-editor-container {
   font-weight: 600;
 }
 
-.hotbox .exp .ring .button .label{
+.hotbox .exp .ring .button .label {
   margin-top: 28px;
   margin-left: -2px;
 }
 
-.hotbox .exp .ring .button .key{
+.hotbox .exp .ring .button .key {
   display: none;
 }

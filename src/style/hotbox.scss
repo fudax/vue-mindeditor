@@ -19,7 +19,7 @@
         margin-left: -35px;
         margin-top: -35px;
         border-radius: 100%;
-        box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
       }
 
       .label,
@@ -48,7 +48,7 @@
       position: absolute;
       left: -25px;
       top: -25px;
-      border: 25px solid rgba(0, 0, 0, .3);
+      border: 25px solid rgba(0, 0, 0, 0.3);
       border-radius: 100%;
       box-sizing: content-box;
     }
@@ -63,7 +63,7 @@
         padding: 8px 15px;
         margin: 0 10px;
         border-radius: 15px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
         position: relative;
 
         .label {
@@ -82,18 +82,18 @@
           margin-left: 3px;
 
           &:before {
-            content: '(';
+            content: "(";
           }
 
           &:after {
-            content: ')';
+            content: ")";
           }
         }
       }
     }
 
     .button {
-      background: #F9F9F9;
+      background: #f9f9f9;
       overflow: hidden;
       cursor: default;
 
@@ -124,7 +124,7 @@
       }
 
       &.selected {
-        -webkit-animation: selected .1s ease;
+        -webkit-animation: selected 0.1s ease;
         background: rgb(228, 93, 92);
 
         .label {
@@ -138,14 +138,14 @@
 
       &.pressed,
       &:active {
-        background: #FF974D;
+        background: #ff974d;
 
         .label {
           color: white;
         }
 
         .key {
-          color: lighten(#FF974D, 30%);
+          color: lighten(#ff974d, 30%);
         }
       }
     }

@@ -1,8 +1,8 @@
-@import 'mixin.scss';
-@import 'dropdown-list.scss';
+@import "mixin.scss";
+@import "dropdown-list.scss";
 header {
   font-size: 12px;
-  &>ul {
+  & > ul {
     display: flex;
     align-items: center;
     height: 30px;
@@ -40,7 +40,7 @@ header {
   height: 61px;
   border-bottom: 1px solid #999;
   .tab-icons {
-    background-image: url('/static/minder/icons.png');
+    background-image: url("/static/minder/icons.png");
     background-repeat: no-repeat;
   }
 }
@@ -51,7 +51,7 @@ header {
   .menu-container {
     display: flex;
     height: inherit;
-    &>div {
+    & > div {
       display: inline-flex;
       overflow: hidden;
       align-items: center;
@@ -59,7 +59,7 @@ header {
       height: 100%;
       border-right: 1px dashed #eee;
     }
-    &>div:last-of-type {
+    & > div:last-of-type {
       border-right: none;
     }
   }
@@ -94,7 +94,7 @@ header {
   }
   .insert-group {
     width: 110px;
-    &>div {
+    & > div {
       height: 50%;
       margin: 0 5px;
     }
@@ -160,7 +160,7 @@ header {
     button:hover {
       background-color: $btn-hover-color;
     }
-    &>div {
+    & > div {
       font-size: inherit;
       flex-wrap: wrap;
       width: 60px;
@@ -186,7 +186,7 @@ header {
         background-position: 50% -1150px;
       }
     }
-    .el-dropdown{
+    .el-dropdown {
       cursor: default;
     }
   }
@@ -209,21 +209,21 @@ header {
   }
   .sequence-group {
     li {
-      background-image: url('/static/minder/iconpriority.png');
+      background-image: url("/static/minder/iconpriority.png");
     }
     @for $i from 0 through 9 {
       .sequence-#{$i} {
-        background-position: 0 -20px * (-1+$i);
+        background-position: 0 -20px * (-1 + $i);
       }
     }
   }
   .progress-group {
     li {
-      background-image: url('/static/minder/iconprogress.png');
+      background-image: url("/static/minder/iconprogress.png");
     }
     @for $i from 0 through 9 {
       .progress-#{$i} {
-        background-position: 0 -20px * (-1+$i);
+        background-position: 0 -20px * (-1 + $i);
       }
     }
   }
@@ -231,12 +231,12 @@ header {
     width: 80px;
     @include flexcenter;
     .mold-icons {
-      background-image: url('/static/minder/mold.png');
+      background-image: url("/static/minder/mold.png");
       background-repeat: no-repeat;
     }
     @for $i from 1 through 6 {
       .mold-#{$i} {
-        background-position: (1-$i)*50px 0;
+        background-position: (1-$i) * 50px 0;
       }
     }
     .dropdown-toggle {
@@ -352,7 +352,7 @@ header {
     }
     @include flexcenter;
     margin: 0 5px;
-    span{
+    span {
       font-size: 12px;
     }
   }

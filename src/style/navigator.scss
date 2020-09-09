@@ -28,7 +28,7 @@
     }
 
     &.active {
-      background-color: #5A6378;
+      background-color: #5a6378;
     }
   }
 
@@ -64,7 +64,7 @@
   .zoom-pan {
     width: 2px;
     height: 70px;
-    box-shadow: 0 1px #E50000;
+    box-shadow: 0 1px #e50000;
     position: relative;
     background: white;
     margin: 3px auto;
@@ -79,7 +79,7 @@
       background: transparent;
 
       &:after {
-        content: ' ';
+        content: " ";
         display: block;
         width: 6px;
         height: 2px;
