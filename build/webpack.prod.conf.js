@@ -17,26 +17,26 @@ var webpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: [
       {
-          test: /\.less$/,
-          use: [
-              MiniCssExtractPlugin.loader,
-              'css-loader',
-              'less-loader',
-              'postcss-loader'
-          ]
+        test: /\.less$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'less-loader',
+          'postcss-loader'
+        ]
       },
       {
-          test: /\.css$/,
-          use: [
-              MiniCssExtractPlugin.loader,
-              {
-                  loader: 'css-loader',
-                  options: {
-                      importLoaders: 1
-                  }
-              },
-              'postcss-loader'
-          ]
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            }
+          },
+          'postcss-loader'
+        ]
       }
     ]
   },
@@ -47,7 +47,7 @@ var webpackConfig = merge(baseWebpackConfig, {
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
   optimization: {
-    splitChunks: { 
+    splitChunks: {
       cacheGroups: {
         commons: {
           test: /[\\/]node_modules[\\/]/,
@@ -55,8 +55,8 @@ var webpackConfig = merge(baseWebpackConfig, {
           chunks: 'all'
         }
       }
-    }, 
-    runtimeChunk: { 
+    },
+    runtimeChunk: {
       name: 'runtime'
     }
   },
@@ -72,7 +72,6 @@ var webpackConfig = merge(baseWebpackConfig, {
         show_copyright: false,
         comments: false,
         compress: {
-          warnings: false,
           drop_debugger: true,
           drop_console: false
         }

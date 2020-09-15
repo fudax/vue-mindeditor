@@ -22,7 +22,7 @@
     npm run build
 
 # License
-    BSD 3-Clause
+    BSD 3-Clause (基于fex-team/kityminder-core，并非kityminder-editor)
 ```
 
 ### 最近比较忙，抽空我再更新一下代码和说明，建议大家自己先研究，加油！

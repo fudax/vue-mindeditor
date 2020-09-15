@@ -32,9 +32,6 @@ export const state = {
       120,
       150,
       200
-    ],
-
-    // 图片上传接口
-    imageUpload: 'server/imageUpload.php'
+    ]
   }
 }

@@ -19,35 +19,35 @@ module.exports = merge(baseWebpackConfig, {
   mode: 'development',
   module: {
     rules: [{
-        test: /\.less$/,
-        use: [
-          'vue-style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              sourceMap: config.dev.cssSourceMap
-            }
-          },
-          {
-            loader: 'less-loader'
-          },
-          'postcss-loader'
-        ]
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'vue-style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              importLoaders: 1,
-              sourceMap: config.dev.cssSourceMap
-            }
-          },
-          'postcss-loader'
-        ]
-      }
+      test: /\.less$/,
+      use: [
+        'vue-style-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            sourceMap: config.dev.cssSourceMap
+          }
+        },
+        {
+          loader: 'less-loader'
+        },
+        'postcss-loader'
+      ]
+    },
+    {
+      test: /\.css$/,
+      use: [
+        'vue-style-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            importLoaders: 1,
+            sourceMap: config.dev.cssSourceMap
+          }
+        },
+        'postcss-loader'
+      ]
+    }
     ]
   },
   devtool: config.dev.devtool,
@@ -57,7 +57,7 @@ module.exports = merge(baseWebpackConfig, {
       rewrites: [{
         from: /.*/,
         to: path.posix.join(config.dev.assetsPublicPath, 'index.html')
-      }, ],
+      },],
     },
     hot: true,
     contentBase: false,
@@ -67,7 +67,6 @@ module.exports = merge(baseWebpackConfig, {
     open: config.dev.autoOpenBrowser,
     overlay: config.dev.errorOverlay ?
       {
-        warnings: false,
         errors: true
       } :
       false,

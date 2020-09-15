@@ -30,45 +30,52 @@ module.exports = {
   },
   module: {
     rules: [{
-        test: /\.vue$/,
-        loader: 'vue-loader',
-        options: vueLoaderConfig
-      },
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        include: [
-          resolve('src'),
-          resolve('test'),
-          resolve('node_modules/element-ui/packages'),
-          resolve('node_modules/element-ui/src'),
-          resolve('node_modules/webpack-dev-server/client')
-        ]
-      },
-      {
-        test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
-        loader: 'url-loader',
-        options: {
-          limit: 10000,
-          name: utils.assetsPath('img/[name].[hash:7].[ext]')
-        }
-      },
-      {
-        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
-        loader: 'url-loader',
-        options: {
-          limit: 10000,
-          name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
-        }
-      },
-      {
-        test: /\.scss$/,
-        loaders: ["style-loader", "css-loader", "sass-loader"]
-      },
-      {
-        test: /.md$/,
-        loader: "text-loader"
+      test: /\.vue$/,
+      loader: 'vue-loader',
+      options: vueLoaderConfig
+    },
+    {
+      test: /\.js$/,
+      loader: 'babel-loader',
+      include: [
+        resolve('src'),
+        resolve('test'),
+        resolve('node_modules/element-ui/packages'),
+        resolve('node_modules/element-ui/src'),
+        resolve('node_modules/element-ui/src'),
+        resolve('node_modules/hotbox/src'),
+        resolve('node_modules/jquery/src'),
+        resolve('node_modules/marked/lib'),
+        resolve('node_modules/kity/src'),
+        resolve('node_modules/codemirror/src'),
+        resolve('node_modules/kityminder-core/src'),
+        resolve('node_modules/json-diff/lib')
+      ]
+    },
+    {
+      test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
+      loader: 'url-loader',
+      options: {
+        limit: 10000,
+        name: utils.assetsPath('img/[name].[hash:7].[ext]')
       }
+    },
+    {
+      test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+      loader: 'url-loader',
+      options: {
+        limit: 10000,
+        name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
+      }
+    },
+    {
+      test: /\.scss$/,
+      loaders: ["style-loader", "css-loader", "sass-loader"]
+    },
+    {
+      test: /.md$/,
+      loader: "text-loader"
+    }
     ]
   },
   plugins: [
