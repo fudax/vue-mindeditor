@@ -1,7 +1,7 @@
-var LINE_ENDING_SPLITER = /\r\n|\r|\n/;
-var EMPTY_LINE = '';
-var NOTE_MARK_START = '<!--Note-->';
-var NOTE_MARK_CLOSE = '<!--/Note-->';
+const LINE_ENDING_SPLITER = /\r\n|\r|\n/;
+const EMPTY_LINE = '';
+const NOTE_MARK_START = '<!--Note-->';
+const NOTE_MARK_CLOSE = '<!--/Note-->';
 
 function exportMarkdown(minder) {
   var minds = minder.exportJson();

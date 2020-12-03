@@ -1,4 +1,4 @@
-  var priorities = [
+const priorities = [
     {jp: 1, mp: 'full-1'},
     {jp: 2, mp: 'full-2'},
     {jp: 3, mp: 'full-3'},
@@ -8,15 +8,15 @@
     {jp: 7, mp: 'full-7'},
     {jp: 8, mp: 'full-8'}
   ];
-  var mmVersion = '<map version="1.0.1">\n';
-  var iconTextPrefix = '<icon BUILTIN="';
-  var iconTextSuffix = '"/>\n';
-  var nodeCreated = '<node CREATED="';
-  var nodeId = '" ID="';
-  var nodeText = '" TEXT="';
-  var nodeSuffix = '">\n';
-  var entityNode = '</node>\n';
-  var entityMap = '</map>';
+  const mmVersion = '<map version="1.0.1">\n';
+  const iconTextPrefix = '<icon BUILTIN="';
+  const iconTextSuffix = '"/>\n';
+  const nodeCreated = '<node CREATED="';
+  const nodeId = '" ID="';
+  const nodeText = '" TEXT="';
+  const nodeSuffix = '">\n';
+  const entityNode = '</node>\n';
+  const entityMap = '</map>';
 
   function exportFreeMind(minder) {
     var minds = minder.exportJson();
