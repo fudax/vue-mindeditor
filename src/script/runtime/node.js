@@ -7,7 +7,7 @@ define(function (require, exports, module) {
 
     var main = hotbox.state('main');
 
-    var buttons = [
+    const buttons = [
       '前移:Alt+Up:ArrangeUp',
       '下级:Tab|Insert:AppendChildNode',
       '同级:Enter:AppendSiblingNode',

@@ -1,5 +1,5 @@
 define(function (require, exports, module) {
-  var keymap = {
+  const keymap = {
 
     'Shift': 16,
     'Control': 17,
